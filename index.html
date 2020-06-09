@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Make User Stories</title>
+</head>
+<body>
+    <div class="container">
+        <h1>ユーザーストーリー作成支援ツール</h1>
+        <button id="btn-download-cards">CSV ダウンロード</button>
+    </div>
+    
+    <div id="cards-container" class="container">
+        <h2>投稿履歴</h2>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <h3>ユーザーストーリーの書き方</h3>
+                    <p><span class="role">{誰のストーリー？}</span>として、</p>
+                    <p><span class="want">{何をする？}</span>したい。</p>
+                    <p>なぜなら、<span>{理由は？}</span>だからだ！</p>
+                </div>
+                <!-- <button class="btn-submit-card">削除</button> -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>新規投稿</h2>
+        <div class="card">
+            <tr>
+                <td>ユーザーストーリーのタイトル</td><td><input type="text" name="name" size="30" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td>ユーザーの役割</td><td><input type="text" name="name" size="30" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td>行動の内容</td><td><input type="text" name="name" size="30" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td>行動の理由</td><td><input type="text" name="name" size="30" maxlength="20"></td>
+            </tr>
+        </div>
+        <button id="btn-submit-card">投稿</button>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./js/userstory.js"></script>
+</body>
+</html>
