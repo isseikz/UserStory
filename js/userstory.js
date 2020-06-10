@@ -1,4 +1,4 @@
-
+// import $ from 'jquery';
 var userStoryModule;
 (function (userStoryModule) {
     var userStory = /** @class */ (function () {
@@ -27,7 +27,7 @@ var userStoryModule;
         userStoryArray.prototype.disp = function (cardsContainer) {
             cardsContainer.children().remove();
             this.array.forEach(function (story) {
-                cardsContainer.append('<div class="col-sm"></div>');
+                cardsContainer.append('<div class="col-sm-6 col-xs-12 col-md-4 col-lg-4"></div>');
                 cardsContainer.children().last().append('<div class="card"></div>');
                 var newCard = cardsContainer.children().last().children().last();
                 newCard.append('<h3>' + story.title + '</h3>');
