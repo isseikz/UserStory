@@ -54,7 +54,7 @@ namespace userStoryModule{
                 newCard.append('<h3>'+ story.title + '</h3>');
                 newCard.append('<p>'+ story.role + 'として、</p>');
                 newCard.append('<p>'+ story.attitude + 'したい。</p>');
-                newCard.append('<p>なぜなら、'+ story.reason + 'だからだ！</p>');
+                newCard.append('<p>なぜなら、'+ story.reason + 'からだ！</p>');
             });
         }
 
